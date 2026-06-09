@@ -1,0 +1,22 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "cypress/globals": true
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "plugins": [
+    "cypress"
+  ],
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-console": "off",
+    "semi": [
+      "error",
+      "always"
+    ]
+  }
+}
