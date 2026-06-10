@@ -31,23 +31,25 @@ The main goals of this project are:
 ## Project Structure
 
 ```text
-cypress-e2e-framework/
+cypress-ecommerce-automation/
 
 ├── cypress
+│   ├── commands
 │   ├── e2e
+│   │   ├── cart
+│   │   ├── checkout
+│   │   ├── login
+│   │   └── products
 │   ├── fixtures
 │   ├── pages
 │   ├── support
-│   └── downloads
-│
-├── reports
-├── screenshots
-├── videos
-│
-├── .github
-│   └── workflows
-│
+│   └── reports
+│       ├── assets
+│       ├── mocha
+│       ├── report.html
+│       └── report.json
 ├── cypress.config.js
+├── cypress.env.json
 ├── package.json
 └── README.md
 ```
@@ -140,7 +142,7 @@ npx cypress open
 Run a specific test:
 
 ```bash
-npx cypress run --spec "cypress/e2e/login.cy.js"
+npx cypress run --spec "cypress/e2e/login/login-success.cy.js"
 ```
 
 ---
@@ -159,10 +161,7 @@ Reports will be available inside the reports directory.
 
 ## CI/CD
 
-The project includes GitHub Actions integration to automatically execute test suites on:
-
-* Push events
-* Pull Requests
+This repository does not currently include a GitHub Actions workflow. Add a workflow under `.github/workflows` to run tests automatically on push and pull request events.
 
 ---
 

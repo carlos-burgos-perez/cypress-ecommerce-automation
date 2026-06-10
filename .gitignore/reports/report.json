@@ -1,0 +1,375 @@
+{
+  "stats": {
+    "suites": 5,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2026-06-10T14:44:06.208Z",
+    "end": "2026-06-10T14:44:33.907Z",
+    "duration": 27699
+  },
+  "results": [
+    {
+      "uuid": "31ddfaa1-b6c2-4360-8253-fcb2356ab1ec",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login\\login-failure.cy.js",
+      "file": "cypress\\e2e\\login\\login-failure.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "812572b3-ed15-47a5-b900-aab06367a78d",
+          "title": "Failed Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should display an error message",
+              "fullTitle": "Failed Login should display an error message",
+              "timedOut": null,
+              "duration": 3210,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_LoginPage.default.visit();\n_LoginPage.default.login(this.users.invalidUser.username, this.users.invalidUser.password);\ncy.get('[data-test=\"error\"]').should('be.visible');",
+              "err": {},
+              "uuid": "17715291-3e9a-45fd-9511-d92f0af547d3",
+              "parentUUID": "812572b3-ed15-47a5-b900-aab06367a78d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "17715291-3e9a-45fd-9511-d92f0af547d3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3210,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "2db23816-7cc0-4fec-b2be-5881e1cf8dca",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login\\login-success.cy.js",
+      "file": "cypress\\e2e\\login\\login-success.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d22502dd-08b9-4f50-acc9-cc2933ebf95f",
+          "title": "Successful Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should login successfully",
+              "fullTitle": "Successful Login should login successfully",
+              "timedOut": null,
+              "duration": 2332,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_LoginPage.default.visit();\n_LoginPage.default.login(this.users.validUser.username, this.users.validUser.password);\ncy.url().should('include', '/inventory');",
+              "err": {},
+              "uuid": "5c5dfcd1-4960-4b71-85b0-f700a64d2c88",
+              "parentUUID": "d22502dd-08b9-4f50-acc9-cc2933ebf95f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5c5dfcd1-4960-4b71-85b0-f700a64d2c88"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2332,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "82c8184b-87b3-4a86-a6ab-955e5efdaf21",
+      "title": "",
+      "fullFile": "cypress\\e2e\\checkout\\checkout-flow.cy.js",
+      "file": "cypress\\e2e\\checkout\\checkout-flow.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "eb8256a9-9f9c-4d5b-a0c5-7f1b0ffb7bb5",
+          "title": "Complete Checkout Flow",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should complete an order successfully",
+              "fullTitle": "Complete Checkout Flow should complete an order successfully",
+              "timedOut": null,
+              "duration": 2843,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_ProductsPage.default.addBackpackToCart();\n_ProductsPage.default.openCart();\n_CartPage.default.clickCheckout();\n_CheckoutPage.default.fillCustomerInformation('Carlos', 'Burgos', '03440');\n_CheckoutPage.default.continueCheckout();\n_CheckoutPage.default.finishCheckout();\n_CheckoutPage.default.verifyOrderCompleted();",
+              "err": {},
+              "uuid": "7b495a1b-bd9e-47cf-bc45-ba61ca95584c",
+              "parentUUID": "eb8256a9-9f9c-4d5b-a0c5-7f1b0ffb7bb5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7b495a1b-bd9e-47cf-bc45-ba61ca95584c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2843,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "a936fa42-4c40-435b-9cc2-e9096a8c055f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\products\\product-list.cy.js",
+      "file": "cypress\\e2e\\products\\product-list.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3eb39312-17fd-42de-a3e7-0bdf887a7d8b",
+          "title": "Product List",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should display all available products",
+              "fullTitle": "Product List should display all available products",
+              "timedOut": null,
+              "duration": 1836,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_ProductsPage.default.verifyProductsPageLoaded();\n_ProductsPage.default.verifyProductsCount(6);",
+              "err": {},
+              "uuid": "9218d35a-a1ff-43a2-9364-a58d604b1ad7",
+              "parentUUID": "3eb39312-17fd-42de-a3e7-0bdf887a7d8b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should display Sauce Labs Backpack",
+              "fullTitle": "Product List should display Sauce Labs Backpack",
+              "timedOut": null,
+              "duration": 1534,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_ProductsPage.default.verifyProductVisible('Sauce Labs Backpack');",
+              "err": {},
+              "uuid": "78858c26-01d1-4b85-ab18-074fd8163313",
+              "parentUUID": "3eb39312-17fd-42de-a3e7-0bdf887a7d8b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should sort products by price",
+              "fullTitle": "Product List should sort products by price",
+              "timedOut": null,
+              "duration": 927,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_ProductsPage.default.sortByPriceLowToHigh();\ncy.get('.inventory_item_price').first().should('contain', '$7.99');",
+              "err": {},
+              "uuid": "fb861961-d12c-4eee-a74c-59bc12b7a82d",
+              "parentUUID": "3eb39312-17fd-42de-a3e7-0bdf887a7d8b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9218d35a-a1ff-43a2-9364-a58d604b1ad7",
+            "78858c26-01d1-4b85-ab18-074fd8163313",
+            "fb861961-d12c-4eee-a74c-59bc12b7a82d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4297,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "6613f9a0-3413-4964-baa8-b320ad06e03d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\cart\\add-to-cart.cy.js",
+      "file": "cypress\\e2e\\cart\\add-to-cart.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ea84d9af-ea28-4369-bfb8-5aa9d9237214",
+          "title": "Add Product To Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should add a product to cart",
+              "fullTitle": "Add Product To Cart should add a product to cart",
+              "timedOut": null,
+              "duration": 2713,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_ProductsPage.default.addBackpackToCart();\n_ProductsPage.default.openCart();\n_CartPage.default.verifyItemInCart('Sauce Labs Backpack');",
+              "err": {},
+              "uuid": "45b7956c-8500-4b0e-8412-f3a20929dc4e",
+              "parentUUID": "ea84d9af-ea28-4369-bfb8-5aa9d9237214",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "45b7956c-8500-4b0e-8412-f3a20929dc4e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2713,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports/mocha",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-06-10T14:44:06.208Z",
+    "end": "2026-06-10T14:44:08.986Z",
+    "duration": 2778,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6613f9a0-3413-4964-baa8-b320ad06e03d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\cart\\add-to-cart.cy.js",
+      "file": "cypress\\e2e\\cart\\add-to-cart.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ea84d9af-ea28-4369-bfb8-5aa9d9237214",
+          "title": "Add Product To Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should add a product to cart",
+              "fullTitle": "Add Product To Cart should add a product to cart",
+              "timedOut": null,
+              "duration": 2713,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_ProductsPage.default.addBackpackToCart();\n_ProductsPage.default.openCart();\n_CartPage.default.verifyItemInCart('Sauce Labs Backpack');",
+              "err": {},
+              "uuid": "45b7956c-8500-4b0e-8412-f3a20929dc4e",
+              "parentUUID": "ea84d9af-ea28-4369-bfb8-5aa9d9237214",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "45b7956c-8500-4b0e-8412-f3a20929dc4e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2713,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports/mocha",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

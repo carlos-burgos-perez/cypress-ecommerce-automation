@@ -1,14 +1,21 @@
-const { defineConfig } = require('cypress'); 
+const { defineConfig } = require('cypress');
 
-module.exports = defineConfig({ 
-  e2e: { 
-    baseUrl: 'https://www.saucedemo.com', 
-    viewportWidth: 1366, 
-    viewportHeight: 768, 
-    video: true, 
-    screenshotOnRunFailure: true, 
-    setupNodeEvents(on, config) { 
-      return config; 
-    } 
-  } 
+module.exports = defineConfig({
+
+  reporter: 'mochawesome',
+
+  reporterOptions: {
+    reportDir: 'reports/mocha',
+    overwrite: false,
+    html: false,
+    json: true
+  },
+
+  e2e: {
+    baseUrl: 'https://www.saucedemo.com',
+
+    setupNodeEvents(on, config) {
+      return config;
+    }
+  }
 });

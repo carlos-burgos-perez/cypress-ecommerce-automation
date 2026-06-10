@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-06-10T14:44:29.515Z",
+    "end": "2026-06-10T14:44:33.907Z",
+    "duration": 4392,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a936fa42-4c40-435b-9cc2-e9096a8c055f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\products\\product-list.cy.js",
+      "file": "cypress\\e2e\\products\\product-list.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3eb39312-17fd-42de-a3e7-0bdf887a7d8b",
+          "title": "Product List",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should display all available products",
+              "fullTitle": "Product List should display all available products",
+              "timedOut": null,
+              "duration": 1836,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_ProductsPage.default.verifyProductsPageLoaded();\n_ProductsPage.default.verifyProductsCount(6);",
+              "err": {},
+              "uuid": "9218d35a-a1ff-43a2-9364-a58d604b1ad7",
+              "parentUUID": "3eb39312-17fd-42de-a3e7-0bdf887a7d8b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should display Sauce Labs Backpack",
+              "fullTitle": "Product List should display Sauce Labs Backpack",
+              "timedOut": null,
+              "duration": 1534,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_ProductsPage.default.verifyProductVisible('Sauce Labs Backpack');",
+              "err": {},
+              "uuid": "78858c26-01d1-4b85-ab18-074fd8163313",
+              "parentUUID": "3eb39312-17fd-42de-a3e7-0bdf887a7d8b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should sort products by price",
+              "fullTitle": "Product List should sort products by price",
+              "timedOut": null,
+              "duration": 927,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_ProductsPage.default.sortByPriceLowToHigh();\ncy.get('.inventory_item_price').first().should('contain', '$7.99');",
+              "err": {},
+              "uuid": "fb861961-d12c-4eee-a74c-59bc12b7a82d",
+              "parentUUID": "3eb39312-17fd-42de-a3e7-0bdf887a7d8b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9218d35a-a1ff-43a2-9364-a58d604b1ad7",
+            "78858c26-01d1-4b85-ab18-074fd8163313",
+            "fb861961-d12c-4eee-a74c-59bc12b7a82d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4297,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports/mocha",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

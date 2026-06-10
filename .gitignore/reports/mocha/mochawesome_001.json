@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-06-10T14:44:14.238Z",
+    "end": "2026-06-10T14:44:17.498Z",
+    "duration": 3260,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "31ddfaa1-b6c2-4360-8253-fcb2356ab1ec",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login\\login-failure.cy.js",
+      "file": "cypress\\e2e\\login\\login-failure.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "812572b3-ed15-47a5-b900-aab06367a78d",
+          "title": "Failed Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should display an error message",
+              "fullTitle": "Failed Login should display an error message",
+              "timedOut": null,
+              "duration": 3210,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_LoginPage.default.visit();\n_LoginPage.default.login(this.users.invalidUser.username, this.users.invalidUser.password);\ncy.get('[data-test=\"error\"]').should('be.visible');",
+              "err": {},
+              "uuid": "17715291-3e9a-45fd-9511-d92f0af547d3",
+              "parentUUID": "812572b3-ed15-47a5-b900-aab06367a78d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "17715291-3e9a-45fd-9511-d92f0af547d3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3210,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports/mocha",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}
