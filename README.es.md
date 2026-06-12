@@ -8,6 +8,8 @@ Este proyecto tiene como objetivo demostrar conocimientos prácticos en automati
 
 ## Objetivos del Proyecto
 
+El objetivo principal de este repositorio es poner de manifiesto las habilidades prácticas en automatización del control de calidad mediante el desarrollo de un marco de pruebas basado en casos reales.
+
 Este repositorio busca demostrar:
 
 * Diseño de frameworks de automatización mantenibles.
@@ -40,18 +42,31 @@ La arquitectura sigue el patrón Page Object Model (POM), ampliamente utilizado 
 ```text
 cypress-ecommerce-automation/
 
+├── cypress/
+│
 ├── e2e/
+│   ├── login/
+│   ├── products/
+│   ├── cart/
+│   └── checkout/
+│
 ├── fixtures/
 ├── pages/
 ├── support/
+│
 ├── reports/
 ├── screenshots/
 ├── videos/
-├── .github/workflows/
+│
+├── .github/
+│   └── workflows/
+│
 ├── cypress.config.js
 ├── cypress.env.json
 ├── eslint.config.mjs
-└── package.json
+├── package.json
+├── README.en.md
+└── README.es.md
 ```
 
 ---
@@ -166,6 +181,10 @@ Los reportes se generan en:
 
 ```text
 reports/
+
+├── report.html
+├── report.json
+└── assets/
 ```
 
 y permiten analizar visualmente los resultados de la ejecución.
@@ -181,6 +200,7 @@ El proyecto está preparado para ejecutarse automáticamente mediante GitHub Act
 3. Ejecución de pruebas Cypress.
 4. Generación de reportes.
 
+Esto garantiza una verificación continua de la calidad en cada modificación del código.
 ---
 
 ## Buenas Prácticas Aplicadas
@@ -210,6 +230,4 @@ El proyecto está preparado para ejecutarse automáticamente mediante GitHub Act
 
 ## Autor
 
-Proyecto de Portfolio para QA Automation.
-
-Desarrollado para demostrar habilidades en automatización de pruebas, diseño de frameworks y buenas prácticas de ingeniería de calidad de software.
+Framework de automatización de pruebas E2E con Cypress desarrollado como proyecto de portfolio. Incluye estructura escalable, uso de Page Object Mode, reporting con Mochawesoma y enfoque en buenas prácticas.

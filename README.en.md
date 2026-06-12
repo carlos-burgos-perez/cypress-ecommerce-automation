@@ -65,7 +65,8 @@ cypress-ecommerce-automation/
 ├── cypress.env.json
 ├── eslint.config.mjs
 ├── package.json
-└── README.md
+├── README.en.md
+└── README.es.md
 ```
 
 ---
@@ -243,6 +244,4 @@ Planned enhancements:
 
 ## Author
 
-QA Automation Portfolio Project
-
-Designed to demonstrate practical automation testing skills, framework architecture, and software quality engineering best practices.
+An end-to-end test automation framwork using Cypress, developed as a portfolio project. It features a scalable architecture, utilises the Page Object Model, incorporates reporting via Mochawesome, and focuses on QA best practices.
