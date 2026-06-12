@@ -65,7 +65,7 @@ cypress-ecommerce-automation/
 ├── cypress.env.json
 ├── eslint.config.mjs
 ├── package.json
-├── README.en.md
+├── README.md
 └── README.es.md
 ```
 
